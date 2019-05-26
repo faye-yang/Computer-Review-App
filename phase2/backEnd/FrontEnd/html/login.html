@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="/css/signup.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/style2.css"/>
+	<script src="/js/index.js"></script>
+</head>
+<body>
+	<div class="nav-bar">
+        <a href="/">Home</a>
+        <a href= "" >Profile</a>
+		<div id='login'>
+		<a href="/html/login.html" >Login</a>
+        <a href= "/html/signup.html">Sign Up</a>
+        
+		</div>
+    </div>
+	<section>
+		<!-- <div id = 'navigation'>
+			<ul>
+				<li><a href="index.html">Main page</a></li>
+			</ul>
+		</div> -->
+		<header>
+			<h1 id = 'header'> Login Page </h1>
+		</header>
+		<form action="/login" method="post">	
+			<ul>
+				<li class="ss-item-required">
+					<span class="label"> Username : </span>
+					<input class="text" type="text" id="username" name="email" placeholder="username" required="true"/>
+				</li>
+				<li class="ss-item-required">
+					<span class="label"> Password :  </span>
+					<input class="text" type="password" id="password" name="password" placeholder="password" required="true"/>
+			</ul>
+
+			<button id="signup" class = 'button' type ="submit">Login</button>
+			<button id="back" class = 'button'>  <a href="/html/index.html">Back</a></button>
+	
+		</form>
+	</section>	
+</body>
+
+</html>

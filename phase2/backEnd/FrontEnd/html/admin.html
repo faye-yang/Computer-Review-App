@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Admin Page</title>
+    <!-- <link rel="stylesheet" type="text/css" href="user.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/admin2.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="/html/index.html">Home</a>
+        <a href="/html/admin.html">Profile</a>
+        <a id = "logout" href="admin.html">Logout</a>
+    </div>
+	
+	<div id= "bigdiv">
+    <div id="banner">
+        <img src="../image/techbanner.jpg" class="bannerPic">
+    </div>
+
+    <div id='productContainer'>
+        <img id="productPic" src="../image/admin_icon.png">
+
+        <div id = "productNameContainer">
+            <span id = "productNameContent"><strong>{{email}}</strong></span>
+        </div>
+        <div id = "productDescriptionContainer">
+            <span id = "productDescriptionContent">Admin of this website</span>
+        </div>
+    </div>
+
+    <div class = 'generalContainer'>
+        <form>
+            <h2>Change the Admin password</h2>
+            <p><input id='oldpw' type="text" placeholder="Type your old password"></p>
+            <p><input id='newpw' type="text" placeholder="Now your new password"></p>
+            <p><input id='newpw1' type="text" placeholder="Re-type your old password"></p>
+            <p><input class="change" type="submit" value="Change"></p>
+        </form>
+    </div>
+    <div>
+		<form id = "newpform" onsubmit="return false">
+			<h2>Create New Product</h2>
+			<p><input id="productname" placeholder="Product Name" type="text"></p>
+			<p><input id="productimg" placeholder="Product IMG" type="text"></p>
+			<p><input id="productdesc" placeholder="Product Description" type="text"></p>
+			<p><input type="submit" class="submit_button" placeholder="Creat New Product"></p>
+		</form>
+	</div>
+
+
+    <!-- <div id='wrapper'> -->
+    <table id='Wishtable'>
+        <tbody>
+            <tr>
+                <th><h2>Products</h2></th>
+                <th><h2>Delete</h2></th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li><img src="../image/image2.jpg" alt="" border=3 height=100 width=100></li>
+    					<li>RXT 2070</li>
+                        <li>JIEOWFJOIEWJ FOEIUW</li>
+                    </ul>
+                </td>
+                <td>
+                    <button class="delete_button">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li><img src="../image/image3.jpg" alt="" border=3 height=100 width=100></li>
+    					<li>Lenovo M710s</i>
+                        <li>FILLER TEXT EWJIFOWJ</li>
+                    </ul>
+                </td>
+                <td>
+                    <button class="delete_button">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li><img src="../image/image3.jpg" alt="" border=3 height=100 width=100></li>
+                        <li>Lenovo M710s</i>
+                        <li>FILLER TEXT EWJIFOWJ</li>
+                    </ul>
+                </td>
+                <td>
+                    <button class="delete_button">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li><img src="../image/image3.jpg" alt="" border=3 height=100 width=100></li>
+                        <li>Lenovo M710s</i>
+                        <li>FILLER TEXT EWJIFOWJJ</li>
+                    </ul>
+                </td>
+                <td>
+                    <button class="delete_button">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li><img src="../image/image3.jpg" alt="" border=3 height=100 width=100></li>
+                        <li>Lenovo M710s</i>
+                        <li>FILLER TEXT EWJIFOWJ</li>
+                    </ul>
+                </td>
+                <td>
+                    <button class="delete_button">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+        <table id='comment_history'>
+            <tbody>
+                <tr>
+                    <th>
+                        <h2>Users</h2>
+                    </th>
+                    <th>
+                        <h2>Disable</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+					       <li>Username: user</li>
+                           <li>THIS IS THE ID</li>
+                        </ul>
+                    </td>
+                    <td class='disableTd'>
+                        <button class="jump_button">Disable</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+	
+
+
+    <!-- </div> -->
+
+        <script type="text/javascript" src="../js/admin.js"></script>
+    </div>
+</body>
+
+</html>

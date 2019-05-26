@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>User pages</title>
+    <!-- <link rel="stylesheet" type="text/css" href="user.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/user2.css">
+</head>
+
+<body onload = "addThings()">
+    <div class="navbar">
+        <a href="/main">Home</a>
+        <a href="/profile">Profile</a>
+        <a id = "logout" href="/logout">Logout</a>
+    </div>
+    
+    <div id ='bigdiv'>
+    <div id="banner">
+        <img src="../image/techbanner.jpg" class="bannerPic">
+    </div>
+
+     <form id="profileStats">
+            <h2>Change Your Password</h2>
+            <p><input id='oldpw' type="password" placeholder="Old Password"></p>
+            <input type="text" id="pass" name="pass" class="inputbox" placeholder="Password" required="required" />
+            <p><input id = "changePw"class="change" type="submit" value="Change Password"></p>
+    </form>
+        <div id="profileInfo">
+            <img class='img-circle' src="../image/reg_user.jpg" />
+            <p><strong>Username: <span id = "email">{{email}}</span></strong></p>
+        </div>
+
+
+
+    <table id='Wishtable'>
+        <tbody>
+            <tr>
+                <th><h2>Wished Products history</h2></th>
+                <th><h2>Delete</h2></th>
+            </tr>
+            <tr id = "clone_product">
+                <td>
+                        
+                        <li id = "name" text-align: center>RXT 2070</li>
+                        <li id = "description">description</li>
+                        <li hidden id = "p_id"> id<li>
+                </td>
+                <td><button class="delete_button" >Jump</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+        <div id='Comment'>
+            <table id='comment_history' bgcolor="#ffecd2">
+                <tbody>
+                    <tr>
+                        <th><h2>Comment History</h2></th>
+                       <!--  <th><h2>Delete the Comment</h2></th> -->
+                    </tr>
+                    <tr>
+                        <td>
+                            <a>
+                                Ntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? 
+                            </a>
+                        </td>
+                        <!-- <td><button class="delete_button">delete</button></td> -->
+                    </tr>
+                    <tr>
+                        <td>
+                            <a>
+                                Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo.
+                            </a>
+                        </td>
+                        <!-- <td>
+                            <button class="delete_button">delete</button>
+                        </td> -->
+                    </tr>
+                    <tr id = "clone_comment">
+                        <td >
+                            <a class = "text_c">Sed ut perspiciatis unde omnis iste.</a>
+                             <a hidden id = "url"class = "text_c"></a>
+                        </td>
+                        <!-- <td>
+                            <button class="delete_button">delete</button>
+                        </td> -->
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+        <script type="text/javascript" src="../js/user.js"></script>
+
+</body>
+
+</html>
